@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>  "Biodata Mahasiswa" </title>
+        <link rel="stylesheet" href="stylebio.css"> <!--link ke css-->
+        
+    </head>
+    <body> 
+        <header>
+            <h1>Biodata Mahasiswa</h1> 
+         <div class="profil"><img src="PROFIL (3).jpg" alt="Profil"   ></div>
+             
+        </header>
+        <table>
+            <tr>
+                <th colspan="2">Biodata </th> <!--menyatukan dua sel jadi satu-->
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td> : Hendra Sutrisno</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td> : A11.2021.13331</td>
+            </tr>
+            <tr>
+                <td>Kelompok</td>
+                <td> : 4103</td>
+            </tr>
+            <tr>
+                <td>TTL</td>
+                <td> : 4 Mei 2004 </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td> : Pati,Jawa Tengah,Indonesia</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td> : 111202113331@mhs.dinus.ac.id</td>
+            </tr>
+            <tr class="no">
+                <td>Nomor Hp</td>
+                <td> : 081234222***</td>
+            </tr>
+        </table>
+        <section class="Aboutme">
+            <h1>About me</h1>
+            <p>Perkenalkan nama saya Hendra sutrisno,Saya berasal dari Pati,jawa Tengah.Saya merupakan anak pertama dari tiga bersaudara.Saya Kuliah di Universitas Dian Nuswantoro.Hobi saya bermain game dan Futsal,Klub favorit saya Yaitu Real madrid.Saya juga suka mendengarkan lagu,salah satu lagu yang saya suka yaitu Pompeii-Bastille.</p>
+           <button id="play" onclick="playaudio()">Play Music</button>
+           <button id="pause" onclick="pauseaudio()">Pause</button>
+           <audio id="audio" src="Pompeii.mp3"></audio>
+           
+           
+           
+        </section>
+        <embed width="560" height="315" src="https://www.youtube.com/embed/v5d6CX7BzCA" title="YouTube video player" ></embed>
+        <video width="560" height="315" controls src="Real Madrid.mp4" ></video>
+        <script>
+            var aud = document.getElementById(audio);
+            function playaudio(){
+                audio.play();
+            }
+            
+            function pauseaudio(){
+                audio.pause();
+            }
+            
+        </script>
+       
+        <section class="KRS">
+                <h1> KRS Mahasiswa</h1>
+                <img src="krs.png" alt="" width="2000" height="500">
+        </section>
+    </body>
+</html>
+
+
