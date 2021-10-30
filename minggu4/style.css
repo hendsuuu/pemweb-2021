@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    height: 200vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(140deg,#4dd5e7,#091766);
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 120px;
+    background: linear-gradient(140deg,#4dd5e7,#091766);
+}
+.container form .data-siswa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .data-siswa .input-box{
+    width: calc(100%/ 2 - 20px);
+    padding-top: 10px;
+}
+.data-siswa .input-box .detail{
+    height: 45px;
+    width: 100%;
+
+}
+form .button{
+    height: 45px;
+    margin: 25px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(-140deg,#4dd5e7,#091766) ;
+    
+}
+form >h1{
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 800;
+    background: linear-gradient(359deg,#091766,#1bc5db);
+    border-radius: 5px;
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.gender_radio{
+    height: 10px;
+    width: 15%;
+    
+
+}
+form .data-siswa .gender{
+    margin-right: 195px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+form .details{
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.detail:focus{
+    background-color: #63d2e0d8;
+    
+}
+.button input:hover{
+    background: linear-gradient(140deg,#4dd5e7,#091766) ;
+}

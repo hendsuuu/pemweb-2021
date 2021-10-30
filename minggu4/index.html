@@ -5,12 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Form</h1>
-    <form action="form.php" method="post" name="form">
-        
-    </form>
-    
+    <div class="container">
+        <div class="title">Form PPDB Jalur Zonasi</div>
+        <form action="form.php" method="post" name="form">
+            <h1>Info Pendaftaran</h1>
+            <div class="data-siswa">
+                <div class="input-box">
+                    <label class="details" for="fnim" >NIM</label>
+                    <input class="detail" type="text" name="fnim" id="fnim" placeholder="Masukkan Nim" pattern="[0-9]{12}" maxlength="12" required>
+                </div>
+                <div class="input-box">
+                    <label for="fsekolah" class="details">Asal Sekolah</label>
+                    <input class="detail" type="text" id="fsekolah" name="fsekolah" placeholder="Masukkan Asal Sekolah" required>
+                </div>
+                    <div class="input-box">
+                    <label for="flulus" class="details">Tahun Lulus</label>
+                    <input class="detail" type="text" id="flulus" name="flulus" placeholder="Masukkan Tahun Lulus" pattern="[0-9]{4}" maxlength="4" required>
+                </div>                  
+            </div>            
+            <br><br>
+            <h1>Data calon peserta</h1>
+            <div class="data-siswa">
+                <div class="input-box">
+                    <label for="fnama" class="details">Nama Lengkap</label>
+                    <input class="detail" type="text" id="fnama" name="fnama" placeholder="Masukkan Nama Lengkap" maxlength="100" pattern="[A-Z]" required>
+                </div>
+                <div class="input-box">
+                    <label for="fnik" class="details">NIK</label>
+                    <input class="detail" type="text" id="fnik" name="fnik" placeholder="Masukkan NIK" pattern="[0-9]{16}" maxlength="16" required>
+                </div>
+                <div class="input-box">
+                    <label for="fttl" class="details">Tempat/Tanggal Lahir</label>
+                    <input class="detail" type="text" id="fttl" name="fttl" placeholder="Masukkan Tempat lahir" required>
+                    <input class="detail" type="date" id="fttl" name="fttl">
+                </div>
+                <div class="input-box">
+                    <label for="fAlamat" class="details">Alamat</label>
+                    <input class="detail" type="text" id="fAlamat" name="fAlamat" placeholder="Masukkan Alamat" required>
+                </div>
+                <div class="input-box">
+                    <label for="fEmail" class="details">Email</label>
+                    <input class="detail" type="email" id="fEmail" name="fEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="gender">
+                    <label for="fgender" >Jenis Kelamin</label><br> 
+                    <input class="gender_radio" type="radio" id="Laki-Laki" name="fgender" value="Laki-Laki">                                           
+                    <label for="Laki-Laki">Laki-Laki</label><br> 
+                    <input class="gender_radio" type="radio" id="Perempuan" name="fgender" value="Perempuan">                       
+                    <label for="Perempuan">Perempuan</label><br>                            
+                </div>                                                                                                       
+            </div>                                      
+            <br><br>
+            <h1>Data keluarga</h1>
+            <div class="data-siswa">
+                <div class="input-box">
+                    <label for="fnokk" class="details">Nomor Kartu Keluarga</label>
+                    <input class="detail" type="text" id="fnokk" name="fnokk" placeholder="Masukkan Nomor Kartu keluarga" required>
+                </div>
+                <div class="input-box">
+                    <label for="fAyah" class="details">Nama Ayah kandung</label>
+                    <input class="detail" type="text" id="fayah" name="fAyah" placeholder="Masukkan Nama Ayah" required>
+                </div>
+                <div class="input-box">
+                    <label for="fibu" class="details">Nama Ibu kandung</label>
+                    <input class="detail" type="text" id="fibu" name="fibu" placeholder="Masukkan Nama Ibu" required>
+                </div>
+                <div class="input-box">
+                    <label for="fkerjaIbu" class="details">Pekerjaan</label>
+                    <input class="detail" type="text" id="fkerjaIbu" name="fkerjaIbu" placeholder="Masukkan Pekerjaan" required>
+                </div>   
+                <div class="input-box"> 
+                    <label for="fAgama1" class="details">Agama</label>
+                    <input class="detail" type="text" id="fAgama" name="fAgama" placeholder="Masukkan Agama" required>
+                </div>
+                <div class="input-box">
+                    <label for="fAgama2" class="details">Agama</label>
+                    <input type="text" class="detail"  id="fAgama2" name="fAgama2" placeholder="Masukkan Agama" required>
+                </div>
+                <div class="input-box">
+                    <label for="fkerjaAyah" class="details">Pekerjaan</label>
+                    <input class="detail" type="text" id="fkerjaAyah" name="fkerjaAyah" placeholder="Masukkan Pekerjaan" required>
+                </div>                                                           
+                <div class="input-box">
+                    <label for="fAlamat" class="details">Alamat Orang tua</label>
+                    <input class="detail" type="text" id="fAlamat" name="fAlamat" placeholder="Masukkan Alamat Ortu" required>
+                </div>     
+            </div>                                    
+            <div class="button">
+               <input type="submit" value="Daftar" name="fsubmit">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
