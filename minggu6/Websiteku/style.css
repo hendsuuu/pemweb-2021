@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    padding-left: 0;
+    margin: 0;
+    font-family:'Montserrat', sans-serif;;
+    
+}
+body{
+    background-color: #202020;
+    width: 100%;
+    max-height: 3000px;
+}
+li,a , button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+header .navbar{
+    background-color: rgba(0,136,169,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    height: 40px;
+    width: 100%;
+    
+}
+.nav_link{
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+.nav_link li {
+    display: inline-block;
+   
+    padding: 0px 20px;
+}
+.nav_link li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.nav_link li a:hover{
+    color: rgb(28, 162, 196);
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+.profil>img {
+    border-radius: 150px; 
+    border: floralwhite;
+    border-style: double;
+    outline: floralwhite;
+    outline-width: 5px;
+    outline-offset: 0px;
+    outline-style: solid;
+    border: 5cm #ddd;
+    transition: 2s;
+    width:250px ;
+    height:250px;
+    
+}
+.profil{
+    margin-top:50px;
+    text-align: center;
+    background: rgba(0,136,169,1);
+    padding-top: 20px;
+}
+.profil p{
+    padding-top: 20px;
+   
+}
+.about{
+    width: 800px;
+    height: 400px;
+    background-color: #edf0f1;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 350px;
+    justify-content:center;
+    align-items: center;
+    text-align: left;
+    padding: 10px 20px;
+    
+}
+footer{
+    color: #edf0f1;
+}
+.skill{
+    color: #edf0f1;
+}
+.kontak{
+    margin-top: 50px;
+    background-color:rgba(0,136,169,1) ;
+    padding-left: 50px;
+}
